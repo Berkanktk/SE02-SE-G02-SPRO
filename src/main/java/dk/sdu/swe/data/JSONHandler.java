@@ -6,6 +6,7 @@ import com.sendgrid.Email;
 import dk.sdu.swe.exceptions.UserCreationException;
 import dk.sdu.swe.models.User;
 import dk.sdu.swe.provider.EmailProvider;
+import org.bouncycastle.crypto.generators.OpenBSDBCrypt;
 import org.json.JSONArray;
 import org.json.JSONObject;
 

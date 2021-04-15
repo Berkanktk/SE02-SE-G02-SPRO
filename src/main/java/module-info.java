@@ -8,4 +8,5 @@ module dk.sdu.swe.Application {
     requires org.bouncycastle.provider;
     requires com.jfoenix;
     requires org.json;
+    requires org.apache.commons.io;
 }
