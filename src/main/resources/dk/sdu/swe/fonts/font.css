@@ -1,0 +1,38 @@
+@font-face {
+    src: url('Roboto-Regular.ttf');
+    src: url('Roboto-Bold.ttf');
+    src: url('Roboto-Medium.ttf');
+
+}
+
+.header {
+    font-family: 'Roboto-Bold ';
+    font-size: 34px;
+}
+
+.description {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Medium.ttf');
+    font-size: 12px;
+}
+
+.sidebar {
+    font-family: 'Roboto-Regular';
+    src: url('Roboto-Regular.ttf');
+    font-size: 16px;
+}
+
+.page {
+    font-family: 'Roboto-Bold';
+    src: url('Roboto-Medium.ttf');
+    font-size: 16px;
+}
+
+
+
+/*
+.text {
+    -fx-font-family: "Roboto";
+}
+
+ */
