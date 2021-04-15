@@ -17,7 +17,7 @@ public class CompanyListItem extends VBox {
     private Map<String, Runnable> options = new HashMap<>() {{
         put("Rediger", CompanyListItem.this::testAction1);
         put("Slet", CompanyListItem.this::testAction2);
-        put("T1", CompanyListItem.this::testAction1);
+        put("Håndtér brugere", CompanyListItem.this::manageUsers);
         put("T2", CompanyListItem.this::testAction2);
     }};
 
@@ -62,6 +62,12 @@ public class CompanyListItem extends VBox {
 
     private void testAction1() {
         System.out.println("Test1");
+    }
+
+    private void manageUsers() {
+
+        Modal<String> modal = new Modal<>(getScene().getWindow());
+
     }
 
     private void testAction2() {

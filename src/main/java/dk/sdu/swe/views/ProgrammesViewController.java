@@ -9,7 +9,7 @@ import java.util.Objects;
 public class ProgrammesViewController extends BorderPane {
 
     public ProgrammesViewController() {
-
+        
         FXMLLoader fxmlLoader = new FXMLLoader(
             Objects.requireNonNull(
                 getClass().getClassLoader().getResource("dk/sdu/swe/ui/programmes/ListView.fxml")));

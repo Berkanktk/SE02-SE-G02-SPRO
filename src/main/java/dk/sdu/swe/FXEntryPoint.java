@@ -1,14 +1,16 @@
 package dk.sdu.swe;
 
+import dk.sdu.swe.controllers.AuthController;
 import dk.sdu.swe.views.SceneNavigator;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.util.Objects;
 
-public class Application extends javafx.application.Application {
-    public static void main(String[] args) {
-        launch();
-    }
 
+public class FXEntryPoint extends javafx.application.Application {
     /**
      * The main entry point for all JavaFX applications.
      * The start method is called after the init method has returned,
@@ -19,9 +21,9 @@ public class Application extends javafx.application.Application {
      * </p>
      *
      * @param stage the primary stage for this application, onto which
-     *              the application scene can be set.
-     *              Applications may create other stages, if needed, but they will not be
-     *              primary stages.
+     *                     the application scene can be set.
+     *                     Applications may create other stages, if needed, but they will not be
+     *                     primary stages.
      * @throws Exception if something goes wrong
      */
     @Override

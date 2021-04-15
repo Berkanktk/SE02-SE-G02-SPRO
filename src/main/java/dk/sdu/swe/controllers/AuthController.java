@@ -1,8 +1,8 @@
 package dk.sdu.swe.controllers;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
 import dk.sdu.swe.data.IOHandler;
 import dk.sdu.swe.models.User;
+import org.bouncycastle.crypto.generators.OpenBSDBCrypt;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -49,7 +49,7 @@ public class AuthController {
         }
 
         // Bcrypt validation
-        boolean pwOkay = BCrypt.verifyer().verify(password.toCharArray(), user.getString("password").toCharArray()).verified;
+        boolean pwOkay = OpenBSDBCrypt.checkPassword(user.getString("password"), password.toCharArray()); //BCrypt.checkpw(password, user.getString("password"));
 
         if (!pwOkay) {
             return false;

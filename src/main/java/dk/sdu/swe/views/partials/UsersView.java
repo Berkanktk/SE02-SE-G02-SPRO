@@ -2,9 +2,10 @@ package dk.sdu.swe.views.partials;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
 import javafx.scene.layout.HBox;
 
-import java.awt.*;
 import java.io.IOException;
 import java.util.Objects;
 
@@ -14,7 +15,7 @@ public class UsersView extends HBox {
     private Label userEmail, userName;
 
     @FXML
-    private Checkbox SuspendedCheckbox, AdministratorCheckbox;
+    private CheckBox SuspendedCheckbox, AdministratorCheckbox;
 
     public UsersView() {
         FXMLLoader fxmlLoader = new FXMLLoader(

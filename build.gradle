@@ -1,9 +1,18 @@
 plugins {
     id 'application'
-    id 'org.openjfx.javafxplugin' version '0.0.9'
 }
 
-mainClassName = 'dk.sdu.swe.Application'
+def currentOS = org.gradle.nativeplatform.platform.internal.DefaultNativePlatform.currentOperatingSystem;
+def platform
+if (currentOS.isWindows()) {
+    platform = 'win'
+} else if (currentOS.isLinux()) {
+    platform = 'linux'
+} else if (currentOS.isMacOsX()) {
+    platform = 'mac'
+}
+
+mainClassName = 'dk.sdu.swe.Main'
 sourceCompatibility = JavaVersion.VERSION_15
 targetCompatibility = JavaVersion.VERSION_15
 
@@ -15,30 +24,28 @@ repositories {
     jcenter()
 }
 
+
+java {
+    modularity.inferModulePath = true
+}
+
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
 
     implementation 'com.google.guava:guava:29.0-jre'
     implementation 'org.json:json:20201115'
-    implementation 'org.openjfx:javafx-fxml:15'
+    implementation "org.openjfx:javafx-base:15.0.1:${platform}"
+    implementation "org.openjfx:javafx-controls:15.0.1:${platform}"
+    implementation "org.openjfx:javafx-graphics:15.0.1:${platform}"
+    implementation "org.openjfx:javafx-fxml:15.0.1:${platform}"
     implementation 'com.jfoenix:jfoenix:9.0.10'
     implementation 'commons-io:commons-io:2.8.0'
-
-    // https://mvnrepository.com/artifact/at.favre.lib/bcrypt
-    implementation group: 'at.favre.lib', name: 'bcrypt', version: '0.9.0'
-
-    compile 'com.sendgrid:sendgrid-java:4.0.1'
-
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.60'
 }
 
 run {
     getenv().each { name, value -> environment name, value }
-}
-
-javafx {
-    version = "15.0.1"
-    modules = [ 'javafx.controls', 'javafx.fxml' ]
 }
 
 tasks.named('test') {

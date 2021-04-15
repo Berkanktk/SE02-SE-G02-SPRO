@@ -23,17 +23,16 @@ public class Navbar extends VBox {
     @FXML
     private ImageView pfpImgView;
 
-    private Map<String, Runnable> profileBtnOptions = Map.of(
-        AuthController.getInstance().getUser().getClass().getName().replaceFirst("dk.sdu.swe.models.", ""), () -> {
-        },
-        "Log ud", () -> {
-            try {
-                AuthController.getInstance().logout();
-                SceneNavigator.goTo("login", true);
-            } catch (IOException ioException) {
-                ioException.printStackTrace();
-            }
-        });
+    private Map<String, Runnable> profileBtnOptions = new HashMap<>(Map.of(
+                AuthController.getInstance().getUser().getClass().getName().replaceFirst("dk.sdu.swe.models.", ""), () -> {},
+            "Log ud", () -> {
+                try {
+                    AuthController.getInstance().logout();
+                    SceneNavigator.goTo("login", true);
+                } catch (IOException ioException) {
+                    ioException.printStackTrace();
+                }
+            }));
 
     private Router router;
 
