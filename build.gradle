@@ -42,6 +42,8 @@ dependencies {
     implementation 'com.jfoenix:jfoenix:9.0.10'
     implementation 'commons-io:commons-io:2.8.0'
     implementation group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.60'
+    implementation 'com.sendgrid:sendgrid-java:4.0.1'
+
 }
 
 run {

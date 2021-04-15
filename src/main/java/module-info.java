@@ -9,4 +9,5 @@ module dk.sdu.swe.Application {
     requires com.jfoenix;
     requires org.json;
     requires org.apache.commons.io;
+    requires sendgrid.java;
 }

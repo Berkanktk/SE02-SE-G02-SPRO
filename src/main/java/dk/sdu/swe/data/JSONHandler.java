@@ -1,6 +1,5 @@
 package dk.sdu.swe.data;
 
-import at.favre.lib.crypto.bcrypt.BCrypt;
 import com.sendgrid.Content;
 import com.sendgrid.Email;
 import dk.sdu.swe.exceptions.UserCreationException;
@@ -10,6 +9,7 @@ import org.bouncycastle.crypto.generators.OpenBSDBCrypt;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -65,7 +65,8 @@ public class JSONHandler implements PersistenceContract {
         JSONObject json = User.userToJson(user);
 
         String password = User.createRandomPassword(12);
-        String passwordHash = BCrypt.withDefaults().hashToString(12, password.toCharArray());
+        SecureRandom random = new SecureRandom();
+        String passwordHash = OpenBSDBCrypt.generate(password.toCharArray(), random.generateSeed(16), 12);
 
         json.put("password", passwordHash);
         Content content = new Content("text/plain", "Velkommen til CrMS - et semesterprojekt!\n\nDu kan nu logge ind i CrMS med foelgende brugeroplysninger:\n\nBrugernavn: " + json.getString("username") + "\nAdgangskode: " + password);
