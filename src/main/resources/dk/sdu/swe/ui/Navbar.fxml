@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
@@ -62,9 +63,19 @@
                                       <Insets />
                                   </HBox.margin>
                               </JFXButton>
-                        <HBox style="-fx-background-color: #FF9800;">
+                        <HBox alignment="CENTER" style="-fx-background-color: #FF9800;">
                            <children>
-                                    <JFXButton fx:id="profileBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handle" prefHeight="62.0" prefWidth="150.0" style="-fx-background-color: #FF9800;" text="Test" />
+                                    <JFXButton fx:id="profileBtn" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handle" prefHeight="62.0" prefWidth="150.0" style="-fx-background-color: #FF9800;" text="Test">
+                                 <graphic>
+                                    <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@images/Temp/Man.png" />
+                                       </image>
+                                       <viewport>
+                                          <Rectangle2D />
+                                       </viewport>
+                                    </ImageView>
+                                 </graphic></JFXButton>
                            </children>
                         </HBox>
                           </children>
