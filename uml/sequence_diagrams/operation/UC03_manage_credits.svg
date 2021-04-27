@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="668px" preserveAspectRatio="none" style="width:497px;height:668px;" version="1.1" viewBox="0 0 497 668" width="497px" zoomAndPan="magnify"><defs><filter height="300%" id="fgrrmromujz7a" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><rect fill="#DDDDDD" height="656.3906" style="stroke:#A80036;stroke-width:1.0;" width="475.5" x="16" y="6"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="202" x="152.75" y="18.0669">Håndtér kreditering (UC03)</text><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="512.0703" style="stroke:#A80036;stroke-width:1.0;" width="10" x="58" y="86.7266"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="457.8047" style="stroke:#A80036;stroke-width:1.0;" width="10" x="234" y="131.9922"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="169.125"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="314.3281"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="459.5313"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="400" y="559.7969"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="437.9375" style="stroke:#000000;stroke-width:2.0;" width="400" x="10" y="93.7266"/><rect fill="#FFFFFF" height="145.2031" style="stroke:none;stroke-width:1.0;" width="400" x="10" y="241.2578"/><rect fill="#FFFFFF" height="145.2031" style="stroke:none;stroke-width:1.0;" width="400" x="10" y="386.4609"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="63" x2="63" y1="76.7266" y2="607.7969"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="238.5" x2="238.5" y1="76.7266" y2="607.7969"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:5.0,5.0;" x1="404.5" x2="404.5" y1="76.7266" y2="607.7969"/><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="82" x="20" y="41.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="27" y="61.4248">:Producer</text><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="82" x="20" y="606.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="27" y="626.792">:Producer</text><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="99" x="187.5" y="25.1328"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="85" x="194.5" y="45.1279">«Controller»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="214" y="61.4248">:Credit</text><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="46.5938" style="stroke:#A80036;stroke-width:1.5;" width="99" x="187.5" y="606.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="85" x="194.5" y="626.792">«Controller»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="46" x="214" y="643.0889">:Credit</text><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="161" x="322.5" y="41.4297"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="329.5" y="61.4248">:SystemAdministrator</text><rect fill="#FEFECE" filter="url(#fgrrmromujz7a)" height="30.2969" style="stroke:#A80036;stroke-width:1.5;" width="161" x="322.5" y="606.7969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="147" x="329.5" y="626.792">:SystemAdministrator</text><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="512.0703" style="stroke:#A80036;stroke-width:1.0;" width="10" x="58" y="86.7266"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="457.8047" style="stroke:#A80036;stroke-width:1.0;" width="10" x="234" y="131.9922"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="169.125"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="314.3281"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="28" style="stroke:#A80036;stroke-width:1.0;" width="10" x="239" y="459.5313"/><rect fill="#FFFFFF" filter="url(#fgrrmromujz7a)" height="30" style="stroke:#A80036;stroke-width:1.0;" width="10" x="400" y="559.7969"/><path d="M10,93.7266 L74,93.7266 L74,100.7266 L64,110.7266 L10,110.7266 L10,93.7266 " fill="#EEEEEE" style="stroke:#000000;stroke-width:1.0;"/><rect fill="none" height="437.9375" style="stroke:#000000;stroke-width:2.0;" width="400" x="10" y="93.7266"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="19" x="25" y="106.7935">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="94" x="89" y="105.937">[Create credit]</text><polygon fill="#A80036" points="222,127.9922,232,131.9922,222,135.9922,226,131.9922" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="68" x2="228" y1="131.9922" y2="131.9922"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="75" y="126.9263">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="125" x="88" y="126.9263">createCredit(credit)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="291" y1="161.125" y2="161.125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="291" x2="291" y1="161.125" y2="174.125"/><line style="stroke:#A80036;stroke-width:1.0;" x1="250" x2="291" y1="174.125" y2="174.125"/><polygon fill="#A80036" points="260,170.125,250,174.125,260,178.125,256,174.125" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="256" y="156.0591">2</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="114" x="269" y="156.0591">saveCredit(credit)</text><polygon fill="#A80036" points="79,229.2578,69,233.2578,79,237.2578,75,233.2578" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="73" x2="233" y1="233.2578" y2="233.2578"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="85" y="228.1919">3</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="98" y="228.1919">Credit</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="410" y1="242.2578" y2="242.2578"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="76" x="15" y="252.4683">[Edit credit]</text><polygon fill="#A80036" points="222,273.1953,232,277.1953,222,281.1953,226,277.1953" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="68" x2="228" y1="277.1953" y2="277.1953"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="75" y="272.1294">4</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="88" y="272.1294">updateCredit(credit)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="291" y1="306.3281" y2="306.3281"/><line style="stroke:#A80036;stroke-width:1.0;" x1="291" x2="291" y1="306.3281" y2="319.3281"/><line style="stroke:#A80036;stroke-width:1.0;" x1="250" x2="291" y1="319.3281" y2="319.3281"/><polygon fill="#A80036" points="260,315.3281,250,319.3281,260,323.3281,256,319.3281" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="256" y="301.2622">5</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="129" x="269" y="301.2622">updateCredit(credit)</text><polygon fill="#A80036" points="79,374.4609,69,378.4609,79,382.4609,75,378.4609" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="73" x2="233" y1="378.4609" y2="378.4609"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="85" y="373.395">6</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="38" x="98" y="373.395">Credit</text><line style="stroke:#000000;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="10" x2="410" y1="387.4609" y2="387.4609"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacing" textLength="93" x="15" y="397.6714">[Delete credit]</text><polygon fill="#A80036" points="222,418.3984,232,422.3984,222,426.3984,226,422.3984" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="68" x2="228" y1="422.3984" y2="422.3984"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="75" y="417.3325">7</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="88" y="417.3325">deleteCredit(credit)</text><line style="stroke:#A80036;stroke-width:1.0;" x1="249" x2="291" y1="451.5313" y2="451.5313"/><line style="stroke:#A80036;stroke-width:1.0;" x1="291" x2="291" y1="451.5313" y2="464.5313"/><line style="stroke:#A80036;stroke-width:1.0;" x1="250" x2="291" y1="464.5313" y2="464.5313"/><polygon fill="#A80036" points="260,460.5313,250,464.5313,260,468.5313,256,464.5313" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="256" y="446.4653">8</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="124" x="269" y="446.4653">deleteCredit(credit)</text><polygon fill="#A80036" points="79,519.6641,69,523.6641,79,527.6641,75,523.6641" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:2.0,2.0;" x1="73" x2="233" y1="523.6641" y2="523.6641"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="9" x="85" y="518.5981">9</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="53" x="98" y="518.5981">Success</text><polygon fill="#A80036" points="388,555.7969,398,559.7969,388,563.7969,392,559.7969" style="stroke:#A80036;stroke-width:1.0;"/><line style="stroke:#A80036;stroke-width:1.0;" x1="244" x2="394" y1="559.7969" y2="559.7969"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacing" textLength="18" x="251" y="554.731">10</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="88" x="273" y="554.731">Notify change</text><!--MD5=[47ab6e0214575f9c1be89e99cfaa3937]
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+box "Håndtér kreditering (UC03)"
+    participant ":Producer" as producer
+    participant ":Credit" as credit <<Controller>>
+    participant ":SystemAdministrator" as admin
+end box
+
+activate producer
+alt Create credit
+    producer -> credit : createCredit(credit)
+    activate credit
+    credit -> credit : saveCredit(credit)
+    activate credit
+    deactivate credit
+    producer <- - credit : Credit
+else Edit credit
+    producer -> credit : updateCredit(credit)
+    credit -> credit : updateCredit(credit)
+    activate credit
+        deactivate credit
+    producer <- - credit : Credit
+else Delete credit
+    producer -> credit : deleteCredit(credit)
+    credit -> credit : deleteCredit(credit)
+    activate credit
+    deactivate credit
+    producer <- - credit : Success
+end
+credit -> admin : Notify change
+activate admin
+deactivate admin
+deactivate credit
+
+@enduml
+
+@startuml
+
+autonumber
+
+box "Håndtér kreditering (UC03)"
+    participant ":Producer" as producer
+    participant ":Credit" as credit <<Controller>>
+    participant ":SystemAdministrator" as admin
+end box
+
+activate producer
+alt Create credit
+    producer -> credit : createCredit(credit)
+    activate credit
+    credit -> credit : saveCredit(credit)
+    activate credit
+    deactivate credit
+    producer <- - credit : Credit
+else Edit credit
+    producer -> credit : updateCredit(credit)
+    credit -> credit : updateCredit(credit)
+    activate credit
+        deactivate credit
+    producer <- - credit : Credit
+else Delete credit
+    producer -> credit : deleteCredit(credit)
+    credit -> credit : deleteCredit(credit)
+    activate credit
+    deactivate credit
+    producer <- - credit : Success
+end
+credit -> admin : Notify change
+activate admin
+deactivate admin
+deactivate credit
+
+@enduml
+
+PlantUML version 1.2021.5(Sun Apr 25 11:20:28 UTC 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: null
+--></g></svg>
