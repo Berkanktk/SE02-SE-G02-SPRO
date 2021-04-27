@@ -70,10 +70,6 @@ package "domain" {
         + signIn() : Producer
     }
 
-    'Statics
-    class DB {
-    }
-
     class Person {
     }
 
@@ -91,7 +87,6 @@ CompanyAdministrator "*" o--> "*" Channel : "Manages >"
 Producer "1" <--o "1..*" Program : "Owns >"
 Producer "1" <-o "1" AuthController : "Authenticates <"
 Producer o--> Company : "Part of >"
-Producer "1..*" -- "1" DB : "Contains <"
 
 Channel "1" <--o "1..*" Program : "Shows >"
 

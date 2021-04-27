@@ -5,10 +5,9 @@ autonumber
 
 box Se kreditering (UC01)
     participant ":Producer" as producer
-    participant ":ProgrammeViewController" as programController <<Control>>
+    participant ":ProgrammeController" as programController <<Control>>
     participant ":Program" as program <<Entity>>
     participant ":Credit" as credit <<Entity>>
-    participant ":FacadeDB" as db <<Entity>>
 end box
 
 activate producer
@@ -30,10 +29,6 @@ activate programController
 programController -> credit : getAll()
 activate credit
 
-credit -> db : getCredits()
-activate db
-credit <-- db : Credits
-deactivate db
 
 loop for each program credit
 credit -> credit : <<create(credit data)>>

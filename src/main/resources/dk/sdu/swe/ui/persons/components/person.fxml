@@ -73,7 +73,7 @@
                 </VBox>
                 <VBox alignment="CENTER">
                     <children>
-                        <JFXButton alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
+                        <JFXButton fx:id="actionsBtn" alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
                             <font>
                                 <Font name="System Bold" size="14.0" />
                             </font>

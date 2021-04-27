@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/sequence-diagram
+
+autonumber
+
+box "Håndtér kreditering (UC03)"
+    participant ":Producer" as producer
+    participant ":Credit" as credit <<Controller>>
+    participant ":SystemAdministrator" as admin
+end box
+
+activate producer
+alt Create credit
+    producer -> credit : createCredit(credit)
+    activate credit
+    credit -> credit : saveCredit(credit)
+    activate credit
+    deactivate credit
+    producer <-- credit : Credit
+else Edit credit
+    producer -> credit : updateCredit(credit)
+    credit -> credit : updateCredit(credit)
+    activate credit
+        deactivate credit
+    producer <-- credit : Credit
+else Delete credit
+    producer -> credit : deleteCredit(credit)
+    credit -> credit : deleteCredit(credit)
+    activate credit
+    deactivate credit
+    producer <-- credit : Success
+end
+credit -> admin : Notify change
+activate admin
+deactivate admin
+deactivate credit
+
+@enduml
