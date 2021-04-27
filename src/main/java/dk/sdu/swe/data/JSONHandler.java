@@ -1,14 +1,17 @@
 package dk.sdu.swe.data;
 
 import at.favre.lib.crypto.bcrypt.BCrypt;
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import com.sendgrid.Content;
 import com.sendgrid.Email;
+import dk.sdu.swe.domain.models.*;
 import dk.sdu.swe.exceptions.UserCreationException;
-import dk.sdu.swe.models.User;
 import dk.sdu.swe.provider.EmailProvider;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -30,6 +33,23 @@ public class JSONHandler implements PersistenceContract {
     private IOHandler getUserIOLoader() {
         return new IOHandler("db/users.json");
     }
+
+    private IOHandler getProgrammeIOLoader() {
+        return new IOHandler("db/programmes.json");
+    }
+
+    private IOHandler getPeopleIOLoader() {
+        return new IOHandler("db/people.json");
+    }
+
+    private IOHandler getCompaniesIOLoader() {
+        return new IOHandler("db/companies.json");
+    }
+
+    private IOHandler getCreditsIOLoader() {
+        return new IOHandler("db/credits.json");
+    }
+
 
     @Override
     public List<User> getUsers() throws Exception {
@@ -67,10 +87,132 @@ public class JSONHandler implements PersistenceContract {
         String passwordHash = BCrypt.withDefaults().hashToString(12, password.toCharArray());
 
         json.put("password", passwordHash);
-        Content content = new Content("text/plain", "Velkommen til CrMS - et semesterprojekt!\n\nDu kan nu logge ind i CrMS med foelgende brugeroplysninger:\n\nBrugernavn: " + json.getString("username") + "\nAdgangskode: " + password);
+        Content content = new Content(
+            "text/plain",
+            "Velkommen til CrMS - et semesterprojekt!\n\n" +
+            "Du kan nu logge ind i CrMS med foelgende brugeroplysninger:\n\n" +
+            "Brugernavn: " + json.getString("username") + "\nAdgangskode: " + password);
         EmailProvider.sendEmail(new Email(json.getString("email")), "Velkommen til CrMS!", content);
 
         IOHandler ioHandler = getUserIOLoader();
         ioHandler.jsonAppendToArray(json);
+    }
+
+    @Override
+    public void updateUser(int id, User user) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteUser(int id) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public List<Person> getPeople() throws Exception {
+        IOHandler ioHandler = getPeopleIOLoader();
+        Type listType = new TypeToken<List<Person>>(){}.getType();
+        return new Gson().fromJson(ioHandler.readFile(), listType);
+    }
+
+    @Override
+    public Person getPerson(int id) throws Exception {
+        return getPeople().stream().filter(person -> person.getId() == id).findAny().orElse(null);
+    }
+
+    @Override
+    public void createPerson(Person person) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updatePerson(int id, Person person) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deletePerson(int id) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public List<Programme> getProgrammes() throws Exception {
+        IOHandler ioHandler = getProgrammeIOLoader();
+        Type listType = new TypeToken<List<Programme>>(){}.getType();
+        return new Gson().fromJson(ioHandler.readFile(), listType);
+    }
+
+    @Override
+    public Programme getProgramme(int id) throws Exception {
+        return getProgrammes().stream().filter(programme -> programme.getId() == id).findAny().orElse(null);
+    }
+
+    @Override
+    public void createProgramme(Programme programme) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updateProgramme(int id, Programme programme) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteProgramme(int id) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public List<Company> getCompanies() throws Exception {
+        IOHandler ioHandler = getCompaniesIOLoader();
+        Type listType = new TypeToken<List<Company>>(){}.getType();
+        return new Gson().fromJson(ioHandler.readFile(), listType);
+    }
+
+    @Override
+    public Company getCompany(int id) throws Exception {
+        return getCompanies().stream().filter(company -> company.getId() == id).findAny().orElse(null);
+    }
+
+    @Override
+    public void createCompany(Company company) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updateCompany(int id, Company company) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteCompany(int id) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public List<Credit> getCredits() throws Exception {
+        IOHandler ioHandler = getCreditsIOLoader();
+        Type listType = new TypeToken<List<Credit>>(){}.getType();
+        return new Gson().fromJson(ioHandler.readFile(), listType);
+    }
+
+    @Override
+    public Credit getCredit(int id) throws Exception {
+        return getCredits().stream().filter(credit -> credit.getId() == id).findAny().orElse(null);
+    }
+
+    @Override
+    public void createCredit(Credit credit) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void updateCredit(int id, Credit credit) throws Exception {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
+    public void deleteCredit(int id) throws Exception {
+        throw new UnsupportedOperationException();
     }
 }
