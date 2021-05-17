@@ -5,7 +5,6 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.effect.DropShadow?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.paint.Color?>
@@ -50,9 +49,6 @@
                                  <font>
                                     <Font size="16.0" />
                                  </font>
-                                 <graphic>
-                                    <ImageView fitHeight="37.0" fitWidth="42.0" pickOnBounds="true" preserveRatio="true" />
-                                 </graphic>
                               </Label>
                            </children>
                         </VBox>
@@ -88,7 +84,7 @@
             <Insets bottom="20.0" left="45.0" right="45.0" top="20.0" />
          </VBox.margin>
       </Separator>
-      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="1233.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="98.0" prefWidth="1122.0" spacing="10.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1037.0" style="-fx-background-color: #ededed;">
                <children>
@@ -100,7 +96,7 @@
                               <Insets left="15.0" />
                            </VBox.margin>
                            <children>
-                              <Label prefHeight="30.0" prefWidth="199.0" text="Hovedrolle ">
+                              <Label prefHeight="30.0" prefWidth="199.0" text="Hovedrolle">
                                  <font>
                                     <Font size="16.0" />
                                  </font>
@@ -109,12 +105,12 @@
                         </VBox>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="119.0" prefWidth="383.0" />
+                  <VBox alignment="CENTER" prefHeight="87.0" prefWidth="383.0" />
                   <VBox alignment="CENTER" prefHeight="119.0" prefWidth="308.0">
                      <children>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <JFXButton fx:id="actionBtn2" alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
+                              <JFXButton fx:id="actionBtn1" alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
@@ -139,7 +135,7 @@
             <Insets bottom="20.0" left="45.0" right="45.0" top="20.0" />
          </VBox.margin>
       </Separator>
-      <HBox alignment="CENTER" prefHeight="119.0" prefWidth="1233.0" spacing="10.0">
+      <HBox alignment="CENTER" prefHeight="98.0" prefWidth="1122.0" spacing="10.0">
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="1037.0" style="-fx-background-color: #ededed;">
                <children>
@@ -160,12 +156,12 @@
                         </VBox>
                      </children>
                   </VBox>
-                  <VBox alignment="CENTER" prefHeight="119.0" prefWidth="383.0" />
+                  <VBox alignment="CENTER" prefHeight="87.0" prefWidth="383.0" />
                   <VBox alignment="CENTER" prefHeight="119.0" prefWidth="308.0">
                      <children>
                         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
                            <children>
-                              <JFXButton fx:id="actionBtn21" alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
+                              <JFXButton fx:id="actionBtn2" alignment="CENTER" prefHeight="52.0" prefWidth="129.0" style="-fx-background-color: transparent;" text="Handlinger" textFill="#ff9800">
                                  <font>
                                     <Font name="System Bold" size="14.0" />
                                  </font>
